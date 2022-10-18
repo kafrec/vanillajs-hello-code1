@@ -17,7 +17,16 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let variable_excuse = "Hola Karen";
+  let nuevoWho = Math.floor(Math.random() * who.length);
+  let whoFinal = who[nuevoWho];
+
+  let nuevoWhat = Math.floor(Math.random() * what.length);
+  let whatFinal = what[nuevoWhat];
+
+  let nuevoWhen = Math.floor(Math.random() * when.length);
+  let whenFinal = when[nuevoWhen];
+
+  let variable_excuse = whoFinal + " " + whatFinal + " " + whenFinal;
 
   document.getElementById("excuse").innerHTML = variable_excuse;
 
